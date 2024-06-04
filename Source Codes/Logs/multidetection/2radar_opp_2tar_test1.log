@@ -1,0 +1,53 @@
+Script started on 2024-05-10 14:19:59+08:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="91" LINES="19"]
+App start.
+^CException in Tkinter callback
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/tkinter/__init__.py", line 1921, in __call__
+    return self.func(*args)
+  File "/usr/lib/python3.10/tkinter/__init__.py", line 839, in callit
+    func(*args)
+  File "/home/jpc/.local/lib/python3.10/site-packages/matplotlib/backends/_backend_tk.py", line 274, in idle_draw
+    self.draw()
+  File "/home/jpc/.local/lib/python3.10/site-packages/matplotlib/backends/backend_tkagg.py", line 10, in draw
+    super().draw()
+  File "/home/jpc/.local/lib/python3.10/site-packages/matplotlib/backends/backend_agg.py", line 388, in draw
+    self.figure.draw(self.renderer)
+  File "/home/jpc/.local/lib/python3.10/site-packages/matplotlib/artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+  File "/home/jpc/.local/lib/python3.10/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+  File "/home/jpc/.local/lib/python3.10/site-packages/matplotlib/figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/jpc/.local/lib/python3.10/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/jpc/.local/lib/python3.10/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+  File "/home/jpc/.local/lib/python3.10/site-packages/matplotlib/axes/_base.py", line 3070, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/jpc/.local/lib/python3.10/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/jpc/.local/lib/python3.10/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+  File "/home/jpc/.local/lib/python3.10/site-packages/matplotlib/axis.py", line 1391, in draw
+    tick.draw(renderer)
+  File "/home/jpc/.local/lib/python3.10/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+  File "/home/jpc/.local/lib/python3.10/site-packages/matplotlib/axis.py", line 295, in draw
+    artist.draw(renderer)
+  File "/home/jpc/.local/lib/python3.10/site-packages/matplotlib/artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+  File "/home/jpc/.local/lib/python3.10/site-packages/matplotlib/text.py", line 755, in draw
+    posx, posy = trans.transform((posx, posy))
+  File "/home/jpc/.local/lib/python3.10/site-packages/matplotlib/transforms.py", line 1495, in transform
+    res = self.transform_affine(self.transform_non_affine(values))
+  File "/home/jpc/.local/lib/python3.10/site-packages/matplotlib/_api/deprecation.py", line 297, in wrapper
+    return func(*args, **kwargs)
+  File "/home/jpc/.local/lib/python3.10/site-packages/matplotlib/transforms.py", line 2409, in transform_affine
+    return self.get_affine().transform(values)
+  File "/home/jpc/.local/lib/python3.10/site-packages/matplotlib/transforms.py", line 2437, in get_affine
+    self._a.get_affine().get_matrix()))
+  File "/home/jpc/.local/lib/python3.10/site-packages/matplotlib/transforms.py", line 2255, in get_affine
+    def get_affine(self):
+KeyboardInterrupt
+^Z
+Script done on 2024-05-10 14:20:06+08:00 [COMMAND_EXIT_CODE="0"]

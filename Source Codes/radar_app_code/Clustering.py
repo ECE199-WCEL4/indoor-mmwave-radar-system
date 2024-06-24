@@ -43,7 +43,7 @@ def transfer_points(mch: MQTTClientHandler, pq: Queue, clustering_params: tuple)
             centroids = cluster_centroids(raw_points, cluster_rad, cluster_sz)
 
             if pq.empty():
-                # print('Hellowww')
+                
                 pq.put((raw_points, centroids))
 
                 

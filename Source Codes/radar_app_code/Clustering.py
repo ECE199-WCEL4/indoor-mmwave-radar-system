@@ -1,6 +1,6 @@
 '''
 Module:         Clustering.py
-Author:         JP Coronado
+Author:         jpc
                 2020-08281
                 BS Electronics Engineering
 Course:         ECE 199 Capstone Project
